@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://jiangqiuping.com/ -->
+<html lang="en-US">
+  <script id="allow-copy_script">
+    (function agent() {
+      let unlock = false
+      document.addEventListener('allow_copy', (event) => {
+        unlock = event.detail.unlock
+      })
+
+      const copyEvents = [
+        'copy',
+        'cut',
+        'contextmenu',
+        'selectstart',
+        'mousedown',
+        'mouseup',
+        'mousemove',
+        'keydown',
+        'keypress',
+        'keyup',
+      ]
+      const rejectOtherHandlers = (e) => {
+        if (unlock) {
+          e.stopPropagation()
+          if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+        }
+      }
+      copyEvents.forEach((evt) => {
+        document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+          capture: true,
+        })
+      })
+    })()
+  </script>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <title>Qiuping Jiang@Ningbo University</title>
+    <meta name="generator" content="Jekyll v3.9.0">
+    <meta property="og:title" content="Qiuping Jiang@Ningbo University">
+    <meta property="og:locale" content="en_US">
+    <link rel="canonical" href="http://jiangqiuping.com/">
+    <meta property="og:url" content="http://jiangqiuping.com/">
+    <meta property="og:site_name" content="Qiuping Jiang@Ningbo University">
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:title" content="Qiuping Jiang@Ningbo University">
+    <script type="application/ld+json">
+      {
+        "url": "http://jiangqiuping.com/",
+        "@type": "WebSite",
+        "headline": "Qiuping Jiang@Ningbo University",
+        "name": "Qiuping Jiang@Ningbo University",
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link rel="preload" href="./asset/css" as="style" type="text/css" crossorigin="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="./asset/style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+    <!-- Setup Google Analytics -->
+
+
+
+    <!-- You can set your favicon here -->
+    <!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+    <!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <!-- 顶部导航栏 -->
+    <div id="c-nav" class="c-nav">
+      <div class="container navFlex">
+        <div class="flexItem">
+          <img id='logo' class="logo" src="./asset/home.png" />
+        </div>
+        <div class="flexItem hiden">
+          <img class="btnImg" src="./asset/List.png" />
+        </div>
+        <div class="flexItem show">
+          <ul>
+            <li><a id="StudentNav">招生信息</a></li>
+            <li><a id="BiographyNav">Biography</a></li>
+            <li><a id="RecentNav">Recent Posts</a></li>
+            <li><a id="PublicationsNav">Publications</a></li>
+            <li><a id="ProfessionalNav">Activities and Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a id="skip-to-content" href="http://jiangqiuping.com/#content">Skip to the content.</a>
+    <!-- header -->
+    <!--    <header id="header" class="page-header" role="banner">
+      <h1 class="project-name">Qiuping Jiang@Ningbo University</h1>
+      <h2 class="project-tagline"></h2>
+
+      <a href="https://github.com/jiangqiuping/Homepage" class="btn">View on GitHub</a>
+
+
+    </header> -->
+
+    <main id="content" class="main-content" role="main">
+      <div class="main-container">
+        <div class="content-container">
+          <div class="content-container-left">
+            <span class="blue_2">
+              <font size="5"><strong>Qiuping Jiang (姜求平)</strong></font>
+            </span><br>
+            Professor/Ph.D. Supervisor<br>
+            E-mail: jiangqiuping@nbu.edu.cn<br>
+            School of Information Science and Engineering,<br>
+            Ningbo University, Ningbo, China<br>
+            <a href="https://scholar.google.com/citations?user=PbPTiKYAAAAJ/">[Google Scholar]</a>
+            <a href="CV.pdf" target="_blank">[CV]</a><br><br>
+            <span class="blue_2">
+              <font size="4"><strong>Research Interests</strong></font>
+            </span><br>
+            Visual Perception Modeling<br>
+            Image/Video Quality Assessment<br>
+            Image/Video Quality Enhancement<br>
+            Immersive Multimedia Computing<br>
+          </div>
+          <div class="content-container-right">
+            <img src="./asset/picture.png" alt="Drawing" style="
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            -webkit-border-radius: 5px;">
+          </div>
+        </div>
+
+        <div id="Student"></div>
+        <h3>招生信息【置顶】</h3>
+        <p style="text-align:justify; text-justify:inter-ideograph;"> <a
+            href="ToProspectiveStudents.pdf" target="_blank"><img src="./asset/new.gif">[欢迎加入宁波大学“视觉信息感知与处理”课题组，点击此处查看]</a></p>
+        <p style="text-align:justify; text-justify:inter-ideograph;">感兴趣的同学，请附上详细的个人简历与我邮件联系。</p>
+
+        <div id="Biography"></div>
+        <h3>Biography</h3>
+        <p style="text-align:justify; text-justify:inter-ideograph;">
+          <b>Qiuping Jiang (姜求平) is currently a Professor and Ph.D. supervisor with the
+          <a href="http://eecs.nbu.edu.cn/">School of Information Science and Engineering</a>, <a
+            href="http://www.nbu.edu.cn/">Ningbo University</a>, Ningbo, China, and also with the Engineering Research Center of Multimedia Communication, 
+          Ministry of Education, China. He spent two years visiting the Multimedia Lab in the School of Computing Science 
+          and Engineering at <a href="https://www.ntu.edu.sg/">Nanyang Technological University (NTU)</a>, Singapore. 
+          His research interests include image quality assessment, visual perception modeling, immersive media computing, and computer vision. 
+          He has published over 80 refereed journal articles/conference papers including 60+ papers in IEEE Transactions (e.g., TIP, TCYB, TCSVT, TMM) and 2 ESI Highly Cited Papers. 
+          He serves as the Associate Editor for IET Image Processing, SPIE Journal of Electronic Imaging, and APSIPA Transactions on Signal and Information Processing, the Area Chair for IEEE ICME2021-2022, the TPC member for a series of conferences
+          (e.g., IJCAI, AAAI, ACM MM), and the reviewer for many prestigious journals (e.g., IEEE TIP, TCYB, TNNLS, TMM, TCSVT, TBC).</b>
+        </p>
+        <p style="text-align:justify; text-justify:inter-ideograph;">
+        <b>姜求平，男，宁波大学信息学院教授、博士生导师，IEEE Senior Member。2018年6月获博士学位，2022年12月晋升教授（破格）。
+          主要研究方向为视觉质量评价、图像增强与复原、计算机视觉等。主持国家自然科学基金面上/青年、浙江省自然科学杰出青年基金等项目；
+          在权威期刊IJCV、T-IP、T-CSVT、T-MM、TCYB、TNNLS、TGRS等IEEE汇刊上发表论文100余篇，授权发明专利20余项，2篇论文入选ESI高被引论文，Google学术引用2300余次, H-Index=28。
+          先后入选斯坦福大学全球“前2%顶尖科学家”榜单、宁波市领军人才、宁波市泛3315计划创新个人、宁波大学“浙东青年学者”培养对象。
+          获JVCI期刊（Elsevier）最佳论文提名奖、浙江省优秀博士学位论文奖和宁波市自然科学优秀论文一等奖，
+          作为主要完成人获浙江省自然科学奖、宁波市科学技术奖和宁波大学教学成果奖各1项。
+          担任浙江省信号处理学会理事，中国图象图形学学会多媒体专委会委员，中国人工智能学会深度学习专委会委员以及IET Image Processing、Journal of Electronic Imaging
+          等SCI期刊编委，IJCAI、AAAI、ACM MM等多个国际学术会议的领域主席和程序委员会委员。</b></p>
+
+        <div id="Recent"></div>
+        <h3>Recent Posts</h3>
+        <ul>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> <img src="./asset/new.gif"> 2023/10/14, One paper (corresponding author) has been accepted by <b>
+              IEEE TCSVT (IF=8.4)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> <img src="./asset/new.gif"> 2023/10/11, One paper (first author) has been accepted by <b>
+              IEEE TMM (IF=7.3)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> <img src="./asset/new.gif"> 2023/09/18, One paper (corresponding author) has been accepted by <b>
+              IEEE TCSVT (IF=8.4)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> <img src="./asset/new.gif"> 2023/08/31, One paper (co-author) has been accepted by <b>
+              IJCV (IF=19.5)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> <img src="./asset/new.gif"> 2023/08/29, One paper (corresponding author) has been accepted by <b>
+              IEEE TGRS (IF=8.2)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> <img src="./asset/new.gif"> 2023/06/20, I am honored for being elevated to the grade of <b>IEEE Senior Member</b>!</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> <img src="./asset/new.gif"> 2023/05/05, One paper (corresponding author) has been accepted by <b>
+              IEEE TIP (IF=11.041)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> <img src="./asset/new.gif"> 2023/04/01, One paper (corresponding author) has been accepted by <b>
+              IEEE TCSVT (IF=5.859)</b>. Congratulations to Jinguang!</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> <img src="./asset/new.gif"> 2023/03/05, One paper (corresponding author) has been accepted by <b>
+              IEEE TMM (IF=8.182)</b>. Congratulations to Zhihua!</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/10/13,
+              <b>入选斯坦福大学全球前2%顶尖科学家年度影响力榜单（The World's Top 2% Scientists Announced by Stanford University）</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/09/08,
+              作为负责人申请的<b>国家自然科学基金面上项目</b>获得批准.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/09/06, One paper (corresponding author) has been accepted by <b>
+              IEEE TCSVT (IF=5.859)</b>. Congratulations to Yaozu!</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/09/06, One paper (co-author) has been accepted by <b>
+              IEEE TMI (IF=11.037)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/07/17, One paper (corresponding author) has been accepted by <b>
+              IEEE TIM (IF=5.332)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/05/30,
+              <b>入选宁波市领军人才</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/05/10, One paper is recognized as <b>Popular Documents</b> 
+              <span style="color:red">(the 50 most frequently accessed documents-April 2022)</span> in IEEE TCSVT (ranked 34).
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/05/01, One paper (first author) has been accepted by <b>
+              IEEE TIP (IF=11.041)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/04/26, One paper (co-author) has been accepted by <b>
+              IEEE TCSVT (IF=5.859)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/04/25, One paper (corresponding author) has been accepted by <b>
+              JVCI (Elsevier)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/04/17, One paper (co-author) has been accepted by <b>
+              ACM TOMM</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/04/10, One paper is recognized as <b>Popular Documents</b> 
+              <span style="color:red">(the 50 most frequently accessed documents-March 2022)</span> in IEEE TIP (ranked 32).
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/04/08,
+              担任浙江省科技专家库入库专家（B类技术专家）.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/03/31,
+              One paper has been accepted by <b>IEEE TITS (IF=9.551)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/03/29,
+              One paper has been accepted by <b>IEEE TCSVT (IF=5.859)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/03/10,
+              One paper (corresponding author) has been accepted by <b>Displays (Elsevier)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/03/10,
+              I have been appointed as the <b>Ph.D. Student Supervisor</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/03/05,
+              One co-authored paper has been accepted by <b>IEEE TNNLS (IF=14.255)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/02/21,
+              I was invited with honor to serve as the <b>Associate Editor</b> of IET Image Processing (IET-IP).</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/02/17, One paper has been accepted by <b>
+              IEEE TIP (IF=11.041)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/02/10,
+              I was invited with honor to serve as the <b>Associate Editor</b> of Journal of Electronic Imaging (JEI).</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2022/02/05,
+              I was invited with honor to serve as the <b>Associate Editor</b> of APSIPA Trans. on Information and Signal Processing.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2021/12/06,
+              作为负责人申请的<b>浙江省自然科学杰出青年基金项目</b>获得批准.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2021/11/10, One
+              co-authored paper has been accepted by <b>IEEE TCYB (IF=19.118)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/10/29, I was
+              invited with honor to serve as the <b>Area Chair</b> of ICME2022.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/10/29, One
+              co-authored paper has been accepted by <b>IEEE TII (IF=11.648)</b>.
+            </div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/10/25, One
+              co-authored paper has been accepted by <b>IEEE TMM (IF=8.182)</b>. </div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/09/09, Two
+              papers have been accepted by <b>IEEE TCSVT (IF=5.859)</b>. </div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph"> 2021/09/05, One
+              co-authored paper has been accepted by <b>IEEE TIP (IF=11.041)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/09/05, One
+              paper has been accepted by <b>IEEE TBC (IF=5.194)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/07/11, One
+              paper (corresponding author) has been accepted by <b>IEEE SPL (IF=3.201)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/05/14, One
+              co-authored paper has been accepted by <b>IEEE TCSVT (IF=5.859)</b>. </div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/05/13, One
+              paper (corresponding author) has been accepted by <b>IEEE TMM (IF=8.182)</b>. </div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/05/13, One
+              co-authored paper has been accepted by <b>IEEE TMM (IF=8.182)</b>. </div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/05/07, One
+              co-authored paper has been accepted by <b>IEEE TII (IF=11.648)</b>.
+            </div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">  2021/03/29, One
+              co-authored paper has been accepted by <b>IEEE TMM (IF=8.182)</b>. </div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">2020/12/05, One paper (corresponding author)
+              has been accepted by <b>IEEE TCI (IF=4.708)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">2020/11/23, I was invited with honor to serve as the <b>Area
+              Chair</b> of ICME2021.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">2020/10/31, I was invited with honor to serve as the
+              <b>TPC</b> member of IJCAI2021.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">2020/10/22, One co-authored paper has been accepted
+              by <b>IEEE TIP (CCF-A, IF=11.041)</b>.</div>
+          </li>
+          <li>
+            <div style="text-align:justify;text-justify:inter-ideograph">2020/10/27, One paper has been accepted by <b>IEEE TII (IF=11.648)</b>.</div>
+          </li>
+        </ul>
+
+        <div id="Publications"></div>
+        <h3>Publications</h3>
+        <h4>In Press</h4>
+        <div style="text-align:justify;text-justify:inter-ideograph">
+        <ol>
+        <li style="margin-bottom: 15px">Wujie Zhou, Jiankang Hong, Wenqing Yan, <b>Qiuping Jiang<sup>*</sup></b>, 
+              "Modal Evaluation Network via Knowledge Distillation for No-Service Rail Surface Defect Detection," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 
+              <span style="color:red">accepted</span>, 2023. </li>
+        <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Yaozu Kang, Zhihua Wang, Wenqi Ren, Chongyi Li, 
+              "Perception-Driven Deep Underwater Image Enhancement without Paired Supervision," <i><b>IEEE Transactions on Multimedia (TMM)</b></i>, 
+              <span style="color:red">accepted</span>, 2023. </li>
+        <li style="margin-bottom: 15px">Wujie Zhou, Fan Sun, <b>Qiuping Jiang<sup>*</sup></b>, Runmin Cong, Jenq-Neng Hwang, 
+              "WaveNet: Wavelet Network with Knowledge Distillation for RGB-T Salient Object Detection," <i><b>IEEE Transactions on Image Processing (TIP)</b></i>, 
+              <span style="color:red">accepted</span>, 2023. </li>
+        <li style="margin-bottom: 15px">Jinguang Cheng, Zongwei Wu, Shuo Wang, Cedric Demonceaux, and <b>Qiuping Jiang<sup>*</sup></b>, "Bidirectional Collaborative 
+               Mentoring Network for Marine Organism Detection and Beyond," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 
+              <span style="color:red">accepted</span>, 2023. <a href="https://ieeexplore.ieee.org/document/10093775"> <b>[IEEE Xplore]</b></a> <a href="https://github.com/chasecjg/BCMNet"> <b>[Code]</b></a> </li>
+        <li style="margin-bottom: 15px">Zhihua Wang, <b>Qiuping Jiang<sup>*</sup></b>, Shanshan Zhao, Wensen Feng, Weisi Lin, 
+              "Deep Blind Image Quality Assessment Powered by Online Hard Example Mining," <i><b>IEEE Transactions on Multimedia (TMM)</b></i>, <span style="color:red">accepted</span>, 2023. 
+              <a href="https://ieeexplore.ieee.org/document/10070789"> <b>[IEEE Xplore]</b></a> <a href="https://github.com/wangzhihua520/IQA_with_OHEM"> <b>[Code]</b></a> </li>
+        <li style="margin-bottom: 15px">Wujie Zhou, Xiaomi Fan,  Weiqing Yan, Shengdao Shan, <b>Qiuping Jiang<sup>*</sup></b>, and Jenq-Neng Hwang, "Graph Attention Guidance Network with Knowledge Distillation for Semantic Segmentation of Remote Sensing Images," 
+              <i><b>IEEE Transactions on Geoscience and Remote Sensing (TGRS)</b></i>, <span style="color:red">accepted</span>, 2023.
+        <li style="margin-bottom: 15px">Guanghui Yue, Houlu Xiao, Hai Xie, Tianwei Zhou, Wei Zhou, Weiqing Yan, Baoquan Zhao, Tianfu Wang, and <b>Qiuping Jiang<sup>*</sup></b>, "Dual-Constraint Coarse-to-Fine Network for Camouflaged Object Detection," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 
+              <span style="color:red">accepted</span>, 2023.
+        <li style="margin-bottom: 15px">Chao Huang, Jie Wen, Yong Xu, <b>Qiuping Jiang</b>, Jian Yang, Yaowei Wang, David Zhang, 
+              "Self-Supervised Attentive Generative Adversarial Networks for Video Anomaly Detection," <i><b>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</b></i>, 
+              <span style="color:red">accepted</span>, 2023. <a href="https://ieeexplore.ieee.org/document/9749781"> <b>[IEEE Xplore]</b></a> </li>
+        <li style="margin-bottom: 15px">Chao Huang, Chengliang Liu, Jie Wen, Yong Xu, <b>Qiuping Jiang</b>, and Yaowei Wang, "Weakly Supervised Video Anomaly Detection via Self-Guided Temporal Discriminative Transformer," <i><b>IEEE Transactions 
+              on Cybernetics (TCYB)</b></i>, <span style="color:red">accepted</span>, 2023. </li>
+        <li style="margin-bottom: 15px">Chongzhen Tian, Feng Shao, Xiongli Chai, <b>Qiuping Jiang</b>, Long Xu, Yo-Sung Ho, 
+              "Viewport-Sphere-Branch Network for Blind Quality Assessment of Stitched 360° Omnidirectional Images," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 
+              <span style="color:red">accepted</span>, 2023. </li>
+        <li style="margin-bottom: 15px">Hangwei Chen, Feng Shao, Xiongli Chai, Yuese Gu, <b>Qiuping Jiang</b>, Xiangchao Meng, Yo-Sung Ho, 
+              "Quality Evaluation of Arbitrary Neural Style Transfer: Subjective Study and Objective Metric," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 
+              <span style="color:red">accepted</span>, 2023. </li>
+        <li style="margin-bottom: 15px">Gang Chen, Xiongli Chai, Feng Shao, <b>Qiuping Jiang</b>, Yo-Sung Ho, "Multi-stage Salient Object 
+              Detection in 360° Omnidirectional Image Aiding by Object-Level Semantic Information," <i><b>IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)</b></i>, 
+              <span style="color:red">accepted</span>, 2023. </li>
+        <li style="margin-bottom: 15px">Xiongli Chai, Feng Shao, <b>Qiuping Jiang</b>, Xuejin Wang, Long Xu, Yo-Sung Ho, "Blind Quality Evaluator of Light Field Images by Group-Based Representations and Multiple 
+              Plane-Oriented Perceptual Characteristics," <i><b>IEEE Transactions on Multimedia (TMM)</b></i>, <span style="color:red">accepted</span>, 2023. </li>
+        </ol>
+        </div>
+        
+        <h4>2023</h4>
+        <div style="text-align:justify;text-justify:inter-ideograph">
+        <ol>
+        <li style="margin-bottom: 15px">Jingchun Zhou, Qian Liu, <b>Qiuping Jiang</b>, Wenqi Ren, Kin-Man Lam, Weishi Zhang, "Underwater Camera: Improving Visual Perception Via Adaptive Dark
+              Pixel Prior and Color Correction," <i><b>International Journal of Computer Vision (IJCV)</b></i>, 2023.</li>
+        <li style="margin-bottom: 15px">Hangwei Chen, Feng Shao, Xiongli Chai, <b>Qiuping Jiang</b>, Xiangchao Meng, Yo-Sung Ho, "Collaborative Learning and Style-Adaptive Pooling Network for 
+              Perceptual Evaluation of Arbitrary Style Transfer," <i><b>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</b></i>, 2023.</li>
+        <li style="margin-bottom: 15px">Zongwei Wu, Jingjing Wang, Zhuyun Zhou, Zhaochong An, <b>Qiuping Jiang</b>, Cédric Demonceaux, Guolei Sun, Radu Timofte, "Object Segmentation by Mining Cross-Modal Semantics," 
+          <i><b>ACM Multimedia (ACM MM)</b></i>, 2023.</li>
+        <li style="margin-bottom: 15px">Yaozu Kang, <b>Qiuping Jiang<sup>*</sup></b>, Chongyi Li, Wenqi Ren, Hantao Liu, Pengjun Wang, "A Perception-Aware Decomposition 
+              and Fusion Framework for Underwater Image Enhancement," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 33(3): 988-1002, 2023. 
+              <a href="https://ieeexplore.ieee.org/document/9895452"><b>[IEEE Xplore]</b></a> </li>
+        <li style="margin-bottom: 15px">Guanghui Yue, Peishan Wei, Tianwei Zhou, <b>Qiuping Jiang</b>, Weiqing Yan, Tianfu Wang, "Towards Multi-Center Skin Lesion Classification 
+              Using Deep Neural Network with Adaptively Weighted Balance Loss," <i><b>IEEE Transactions on Medical Imaging (TMI)</b></i>, 
+              42(1): 119-131, 2023. <a href="https://ieeexplore.ieee.org/document/9878129"><b>[IEEE Xplore]</b></a> </li>
+        <li style="margin-bottom: 15px">Runmin Cong, Qi Qin, Chen Zhang, <b>Qiuping Jiang</b>, Shiqi Wang, Sam Kwong, "A Weakly Supervised Learning Framework for Salient  Object Detection via Hybrid Labels," 
+              <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 33(2): 534-548, 2023. 
+              <a href="https://ieeexplore.ieee.org/document/9881551"><b>[IEEE Xplore]</b></a> </li>
+        <li style="margin-bottom: 15px">Hangwei Chen, Xiongli Chai, Feng Shao, Xuejin Wang, <b>Qiuping Jiang</b>, Xiangchao Meng, Yo-Sung Ho, "Perceptual Quality Assessment of 
+              Cartoon Images," <i><b>IEEE Transactions on Multimedia (TMM)</b></i>, 25: 140-153, 2023. 
+              <a href="https://ieeexplore.ieee.org/document/9585540"><b>[IEEE Xplore]</b></a> </li> 
+        <li style="margin-bottom: 15px">Gang Chen, Feng Shao, Xiongli Chai, Hangwei Chen, <b>Qiuping Jiang</b>, Xiangchao Meng, Yo-Sung Ho, 
+              "Modality-Induced Transfer-Fusion Network for RGB-D and RGB-T Salient Object Detection," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 
+              33(4): 1787-1801, 2023. <a href="https://ieeexplore.ieee.org/document/9925217"><b>[IEEE Xplore]</b></a> </li>
+        <li style="margin-bottom: 15px">Guanghui Yue, Siying Li, Tianwei Zhou, Miaohui Wang, Jingfeng Du, <b>Qiuping Jiang</b>, Wei Gao, Tianfu Wang, "Adaptive Context Exploration 
+              Network for Polyp Segmentation in Colonoscopy Images," <i><b>IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)</b></i>, 
+              7(2): 487-499, 2023. <a href="https://ieeexplore.ieee.org/document/9852746"><b>[IEEE Xplore]</b></a> </li>
+        <li style="margin-bottom: 15px">Xiaoyu Zhang, Wei Gao, Ge Li, <b>Qiuping Jiang</b>, Runmin Cong, "Image Quality Assessment Driven Reinforcement Learning for Mixed Distorted 
+              Image Restoration," <i><b>ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)</b></i>, 19(1): 1–23, 2023. 
+              <a href="https://dl.acm.org/doi/abs/10.1145/3532625"><b>[ACM Digital Library]</b></a> </li>
+        </ol>
+        </div>
+
+        <h4>2022</h4>
+        <div style="text-align:justify;text-justify:inter-ideograph">
+         <ol>
+         <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Zhentao Liu, Shiqi Wang, Feng Shao, Weisi Lin,
+              "Toward Top-Down Just Noticeable Difference Estimation of Natural Images," <i><b>IEEE Transactions on
+               Image Processing (TIP)</b></i>, 31: 3697-3712, 2022. 
+           <a href="https://ieeexplore.ieee.org/document/9779453"><b>[IEEE Xplore]</b> </a>
+           <a href="https://github.com/Zhentao-Liu/KLT-JND"><b>[Code]</b></a></li>
+         <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Zhentao Liu, Ke Gu, Feng Shao, Xinfeng Zhang, Hantao Liu, Weisi Lin, 
+           "Single Image Super-Resolution Quality Assessment: A Real-World Dataset, Subjective Studies, and An Objective Metric," 
+           <i><b>IEEE Transactions on Image Processing (TIP)</b></i>, 31: 2279-2294, 2022. 
+           <a href="https://ieeexplore.ieee.org/document/9727079"><b>[IEEE Xplore]</b> </a> 
+           <a href="https://github.com/Zhentao-Liu/RealSRQ-KLTSRQA"><b>[Dataset&Code]</b> </a> </li>
+         <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Yudong Mao, Runmin Cong, Wenqi Ren, Chao Huang, Feng
+              Shao, "Unsupervised Decomposition and Correction Network for Low-light Image Enhancement," <i><b>IEEE
+               Transactions on Intelligent Transportation Systems (TITS)</b></i>, 23(10):19440-19455, 2022. 
+               <a href="https://ieeexplore.ieee.org/document/9757816"><b>[IEEE Xplore]</b></a> 
+               <a href="https://github.com/myd945/UDCN"><b>[Dataset&Code]</b> </a> </li>  
+         <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Yuese Gu, Chongyi Li, Runmin Cong, Feng Shao, "Underwater Image Enhancement Quality
+              Evaluation: Benchmark Database and Objective Metric," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 
+          32(9): 5959-5974, 2022. <a href="https://ieeexplore.ieee.org/document/9749233"><b>[IEEE Xplore]</b></a> 
+          <a href="https://github.com/yia-yuese/SAUD-Dataset"><b>[Dataset&Code]</b> </a> </li>
+         <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Zhenyu Peng, Feng Shao, Ke Gu, Yabin Zhang, Wenjun Zhang, Weisi Lin, 
+           "StereoARS: Quality evaluation for stereoscopic image retargeting with binocular inconsistency detection," 
+           <i><b>IEEE Transactions on Broadcasting (TBC)</b></i>, 68(1): 43-57, 2022. 
+           <a href="https://ieeexplore.ieee.org/document/9546995"><b>[IEEE Xplore]</b> </a> </li>
+         <li style="margin-bottom: 15px">Zhenyu Peng, <b>Qiuping Jiang<sup>*</sup></b>, Feng Shao, Wei Gao, Weisi Lin, 
+           "LGGD+: Image retargeting quality assessment by measuring local and global geometric distortions," 
+           <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 
+          32(6): 3422-3437, 2022. <a href="https://ieeexplore.ieee.org/document/9537816"><b>[IEEE Xplore]</b></a> </li>
+         <li style="margin-bottom: 15px">Yudong Mao, <b>Qiuping Jiang<sup>*</sup></b>, Runmin Cong, Wei Gao, Feng Shao, Sam Kwong, 
+           "Cross-modality fusion and progressive integration network for saliency prediction on stereoscopic 3D images," 
+           <i><b>IEEE Transactions on Multimedia (TMM)</b></i>, 24: 2435-2448, 2022. 
+           <a href="https://ieeexplore.ieee.org/document/9435962"><b>[IEEE Xplore]</b></a> 
+           <a href="https://pan.baidu.com/s/11zUjF6vTMCFA2ksioxWG_A?pwd=hclp"><b>[百度云盘]</b> </a> 
+           <a href="https://drive.google.com/file/d/1Y2r6bk5LD8iNmgrPyTSSdnGj_y83FsVI/view?usp=sharing"><b>[GoogleDrive]</b> </a> </li>
+         <li style="margin-bottom: 15px">Runmin Cong, Haowei Yang, <b>Qiuping Jiang<sup>*</sup></b>, et al., "BCS-Net: Boundary, Context and Semantic for 
+           Automatic COVID-19 Lung Infection Segmentation from CT Images," <i><b>IEEE Transactions on Instrumentation and Measurement (TIM)</b></i>, 71: 5019011, 2022. 
+            <a href="https://ieeexplore.ieee.org/document/9849697"><b>[IEEE Xplore]</b> </a> </li>
+         <li style="margin-bottom: 15px">Wei Zhou, Xiongkuo Min, Hong Li, <b>Qiuping Jiang<sup>*</sup></b>, 
+            "A brief survey on adaptive video streaming quality assessment,"
+            <i><b>Journal of Visual Communication and Image Representation</b></i>, 86: 103526, 2022. 
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S1047320322000694"><b>[ScienceDirect]</b> </a> </li>
+         <li style="margin-bottom: 15px">Jiawu Xu, Wei Zhou, Hong Li, Fucui Li, <b>Qiuping Jiang<sup>*</sup></b>, 
+            "Quality Assessment of Multi-Exposure Image Fusion by Synthesizing Local and Global Intermediate References,"
+            <i><b>Displays</b></i>, 74: 102188, 2022. 
+            <a href="https://www.sciencedirect.com/science/article/pii/S0141938222000336"><b>[ScienceDirect]</b> </a> </li> 
+         <li style="margin-bottom: 15px">Wei Gao, <b>Qiuping Jiang</b>, Ronggang Wang, Siwei Ma, Ge Li, Sam Kwong,
+           "Consistent Quality Oriented Rate Control in HEVC via Balancing Intra and Inter Frame Coding," 
+            <i><b>IEEE Transactions on Industrial Informatics (TII)</b></i>, 18(3): 1594-1604, 2022. 
+            <a href="https://ieeexplore.ieee.org/document/9428610"><b>[IEEE Xplore]</b> </a> </li>
+         <li style="margin-bottom: 15px">Chao Huang, Zhihao Wu, Jie Wen, Yong Xu, <b>Qiuping Jiang</b>, Yaowei Wang, 
+            "Abnormal Event Detection Using Deep Contrastive Learning for Intelligent Video Surveillance System," 
+            <i><b>IEEE Transactions on Industrial Informatics (TII)</b></i>, 18(8): 5171-5179, 2022. 
+           <a href="https://ieeexplore.ieee.org/document/9591368"><b>[IEEE Xplore]</b> </a> </li>
+         <li style="margin-bottom: 15px">Xuejin Wang, Feng Shao, <b>Qiuping Jiang</b>, Zhenqi Fu, Xiangchao Meng, Ke Gu, Yo-Sung Ho, 
+            "Combining Retargeting Quality and Depth Perception Measures for Quality Evaluation of Retargeted Stereopairs," 
+            <i><b>IEEE Transactions on Multimedia (TMM)</b></i>, 24: 2422-2434, 2022. 
+            <a href="https://ieeexplore.ieee.org/document/9435954"><b>[IEEE Xplore]</b></a></li>
+         <li style="margin-bottom: 15px">Chongzhen Tian, Xiongli Chai, Gang Chen, Feng Shao, <b>Qiuping Jiang</b>, Xiangchao Meng, Long Xu, Yo-Sung Ho, "VSOIQE: A Novel Viewport-based 
+              Stitched 360° Omnidirectional Image Quality Evaluator," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 
+              32(10): 6557-6572, 2022. <a href="https://ieeexplore.ieee.org/document/9766332"><b>[IEEE Xplore]</b></a> </li>
+         <li style="margin-bottom: 15px">Gang Chen, Feng Shao, Xiongli Chai, Hangwei Chen, <b>Qiuping Jiang</b>, Xiangchao Meng, Yo-Sung Ho, "CGMDRNet: Cross-Guided 
+           Modality Difference Reduction Network for RGB-T Salient Object Detection," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 
+              32(9): 6308-6323, 2022. <a href="https://ieeexplore.ieee.org/document/9756028"><b>[IEEE Xplore]</b></a></li>
+         <li style="margin-bottom: 15px">Xiongli Chai, Feng Shao, <b>Qiuping Jiang</b>, Xiangchao Meng, Yo-Sung Ho, "Monocular and Binocular Interactions Oriented Deformable 
+          Convolutional Networks for Blind Quality Assessment of Stereoscopic Omnidirectional Images," <i><b>IEEE Transactions on Circuits and Systems for Video Technology 
+          (TCSVT)</b></i>, 32(6): 3407-3421, 2022. <a href="https://ieeexplore.ieee.org/document/9536507"><b>[IEEE Xplore]</b> </a> 
+          <a href="https://pan.baidu.com/s/170Ri3SZPUiLnyJNXUS4dSQ"><b>[Code, Password: 15ou]</b></a></li>
+         <li style="margin-bottom: 15px">Xuejin Wang, Feng Shao, <b>Qiuping Jiang</b>, Xiongli Chai, Xiangchao Meng, Yo-Sung Ho, 
+            "List-wise rank learning for stereoscopic image retargeting quality assessment," 
+            <i><b>IEEE Transactions on Multimedia (TMM)</b></i>, 24: 1595-1608, 2022.
+            <a href="https://ieeexplore.ieee.org/document/9388879"><b>[IEEE Xplore]</b> </a> </li> 
+         <li style="margin-bottom: 15px">Wei Zhou, Jiahua Xu, <b>Qiuping Jiang</b>, Zhibo Chen, 
+            "No-reference quality assessment for 360-degree images by analysis of multi-frequency information and local-global naturalness," 
+            <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 32(4): 1778-1791, 2022. 
+            <a href="https://ieeexplore.ieee.org/document/9432968"><b>[IEEE Xplore]</b> </a> </li>
+         <li style="margin-bottom: 15px">Chao Huang, Zehua Yang, Jie Wen, Yong Xu, <b>Qiuping Jiang</b>, Jian Yang, Yaowei Wang, "Self-Supervision-Augmented Deep Autoencoder for 
+          Unsupervised Visual Anomaly Detection," <i><b>IEEE Transactions on Cybernetics (TCYB)</b></i>, 52(12): 13834-13847, 2022. 
+          <a href="https://ieeexplore.ieee.org/document/9632460"><b>[IEEE Xplore]</b> </a> </li>
+         <li style="margin-bottom: 15px">Yuhong Wang, Hong Li<sup>*</sup>, <b>Qiuping Jiang</b>, 
+            "Dynamically attentive viewport sequence for no-reference quality assessment of omnidirectional images,"
+            <i><b>Frontiers in Neuroscience</b></i>, 16: 1022041, 2022. 
+            <a href="https://www.frontiersin.org/articles/10.3389/fnins.2022.1022041/full"><b>[Frontiers]</b> </a> </li> 
+         <li style="margin-bottom: 15px">Chao Huang, Chengliang Liu, Zheng Zhang, Zhihao Wu, Jie Wen, <b>Qiuping Jiang</b>, Yong Xu, 
+            "Pixel-Level Anomaly Detection via Uncertainty-aware Prototypical Transformer," 
+            <i><b>in Proceedings of the 30th ACM International Conference on Multimedia (ACM MM)</b></i>, Lisbon, Portugal, Oct. 2022. 
+            <a href="https://ieeexplore.ieee.org/document/9432968"><b>[IEEE Xplore]</b> </a> </li>
+          </ol>
+        </div>
+
+        <h4>2021</h4>
+        <div style="text-align:justify;text-justify:inter-ideograph">
+          <ol>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Zhenyu Peng, Guanghui Yue, Hong Li, Feng Shao,
+              "No-reference image contrast evaluation by generating bi-directional pseudo references," <i><b>IEEE
+                  Transactions on Industrial Informatics (TII)</b></i>, 17(9): 6062-6072, Sept. 2021. <a
+                href="https://ieeexplore.ieee.org/document/9247305">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Xuejin Wang<sup>#</sup>, <b>Qiuping Jiang<sup>#</sup></b>, Feng Shao, Ke Gu,
+              Guangtao Zhai, Xiaokang Yang, "Exploiting local degradation characteristics and global statistical
+              properties for blind assessment of tone-mapped HDR images," <i><b>IEEE Transactions on Multimedia
+                  (TMM)</b></i>, 23: 692-705, 2021. <a href="https://ieeexplore.ieee.org/document/9064671">[IEEE Xplore]
+              </a> </li>
+            <li style="margin-bottom: 15px">Junkang Hu, <b>Qiuping Jiang<sup>*</sup></b>, Runmin Cong, Wei Gao, Feng
+              Shao, "Two-branch deep neural network for underwater image enhancement in HSV color space," <i><b>IEEE
+                  Signal Processing Letters (SPL)</b></i>, 28: 2152-2156, 2021. <a
+                href="https://ieeexplore.ieee.org/document/9496260">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Sheng Yang, Weisi Lin, Guosheng Lin, <b>Qiuping Jiang</b>, Zichuan Liu,
+              "Progressive Self-Guided Loss for Salient Object Detection," <i><b>IEEE Transactions on Image Processing
+                  (TIP)</b></i>, 30: 8426-8438, 2021. <a href="https://ieeexplore.ieee.org/document/9557833">[IEEE
+                Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Chao Huang, Zongju Peng, Yong Xu, Feng Chen, <b>Qiuping Jiang</b>, Yun
+              Zhang, Gangyi Jiang, Yo-Sung Ho, "Online learning-based multi-stage complexity control for live video
+              coding," <i><b>IEEE Transactions on Image Processing (TIP)</b></i>, 30: 641-656, 2021. <a
+                href="https://ieeexplore.ieee.org/document/9259230">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Xuejin Wang, Feng Shao, <b>Qiuping Jiang</b>, Xiangchao Meng, Yo-Sung Ho,
+              "Measuring coarse-to-fine texture and geometric distortions for quality assessment of DIBR-synthesized
+              images," <i><b>IEEE Transactions on Multimedia (TMM)</b></i>, 23: 1173-1186, 2021. <a
+                href="https://ieeexplore.ieee.org/document/9091246">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Zhenqi Fu, Feng Shao, <b>Qiuping Jiang</b>, Xiangchao Meng, Yo-Sung Ho,
+              "Subjective and objective quality assessment for stereoscopic 3D image retargeting," <i><b>IEEE
+                  Transactions on Multimedia (TMM)</b></i>, 23: 2100-2113, 2021. <a
+                href="https://ieeexplore.ieee.org/document/9139288">[IEEE Xplore] </a> <a
+                href="https://pan.baidu.com/s/1uBVzAY-bXYyjVjBCItwhQA">[NBU-SIRQA Database] </a> <a
+                href="https://github.com/zhenqifu/SIRQA">[Matlab Code] </a> </li>
+            <li style="margin-bottom: 15px">Xiongli Chai, Feng Shao, <b>Qiuping Jiang</b>, Yo-Sung Ho,
+              "Roundness-preserving warping for aesthetic enhancement-based stereoscopic image editing," <i><b>IEEE
+                  Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 31(4): 1463-1477, 2021. <a
+                href="https://ieeexplore.ieee.org/document/9144262">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Feng Shao, Zhenqi Fu, <b>Qiuping Jiang</b>, Gangyi Jiang, Yo-Sung Ho,
+              "Transformation-aware similarity measurement for image retargeting quality assessment via bi-directional
+              rewarping," <i><b>IEEE Transactions on Systems, Man and Cybernetics: Systems (TSMC)</b></i>, 51(5):
+              3053-3067, 2021. <a href="https://ieeexplore.ieee.org/document/8736027">[IEEE Xplore] </a> <a
+                href="https://github.com/zhenqifu/TRASIM-driven-Multi-operator">[Matlab Code] </a> </li>
+          </ol>
+        </div>
+
+        <h4>2020</h4>
+        <div style="text-align:justify;text-justify:inter-ideograph">
+          <ol>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Wei Zhou, Xiongli Chai, Guanghui Yue, Feng Shao, Zhibo
+              Chen, "A full-reference stereoscopic image quality measurement via hierarchical deep feature degradation
+              fusion," <i><b>IEEE Transactions on Instrumentation and Measurement (TIM)</b></i>, 69(12): 9784-9796, Dec.
+              2020. <a href="https://ieeexplore.ieee.org/document/9127513">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Wei Gao, Shiqi Wang, Guanghui Yue, Feng Shao, Yo-Sung
+              Ho, Sam Kwong, "Blind image quality measurement by exploiting high order statistics with deep dictionary
+              encoding network," <i><b>IEEE Transactions on Instrumentation and Measurement (TIM)</b></i>, 69(10):
+              7398-7410, Oct. 2020. <a href="https://ieeexplore.ieee.org/document/9055066">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Feng Shao, Yanjia Fei, <b>Qiuping Jiang<sup>*</sup></b>, Xiangchao Meng,
+              Yo-Sung Ho, "Building stereoscopic zoomer via global and local warping optimization," <i><b>IEEE
+                  Transactions on Computational Imaging (TCI)</b></i>, 6: 1622-1635, Dec. 2020. <a
+                href="https://ieeexplore.ieee.org/document/9288920">[IEEE Xplore] </a> <a
+                href="https://pan.baidu.com/s/1c17cCWO_a5C1UMsXpyJNWg">[Stereopair Zoom Database] </a> </li>
+            <li style="margin-bottom: 15px">Ke Gu, Xin Xu, Junfei Qiao, <b>Qiuping Jiang</b>, Weisi Lin, Daniel
+              Thalmann, "Learning a unified blind image quality metric via on-line and off-line big training instances,"
+              <i><b>IEEE Transactions on Big Data (TBD)</b></i>, 6(4): 780-791, Dec. 2020. <a
+                href="https://ieeexplore.ieee.org/document/8627983">[IEEE Xplore] </a>
+            </li>
+            <li style="margin-bottom: 15px">Sheng Yang, Guosheng Lin, <b>Qiuping Jiang</b>, Weisi Lin, "A dilated
+              inception network for visual saliency prediction," <i><b>IEEE Transactions on Multimedia (TMM)</b></i>,
+              22(8): 2163-2176, Aug. 2020. <a href="https://ieeexplore.ieee.org/document/8868198">[IEEE Xplore] </a>
+            </li>
+            <li style="margin-bottom: 15px">Wujie Zhou, Jingsheng Lei, <b>Qiuping Jiang</b>, Lu Yu, Ting Luo, "Blind
+              binocular visual quality predictor using deep fusion network," <i><b>IEEE Transactions on Computational
+                  Imaging (TCI)</b></i>, 6: 883-893, 2020. <a href="https://ieeexplore.ieee.org/document/9093188">[IEEE
+                Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Xiongli Chai, Feng Shao, <b>Qiuping Jiang</b>, Yo-Sung Ho, "MSTGAR:
+              Multioperator based stereoscopic thumbnail generation with arbitrary resolution," <i><b>IEEE Transactions
+                  on Multimedia (TMM)</b></i>, 22(5): 1208-1219, May 2020. <a
+                href="https://ieeexplore.ieee.org/document/8826244">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Wei Zhou, <b>Qiuping Jiang</b>, Yuwang Wang, Zhibo Chen, Weiping Li, "Blind
+              quality assessment for image superresolution using deep two-stream convolutional networks,"
+              <i><b>Information Sciences (INS)</b></i>, 528: 205-218, 2020. <a
+                href="https://www.sciencedirect.com/science/article/pii/S0020025520303352">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px">Xuejin Wang, Meiling Qi, Feng Shao, <b>Qiuping Jiang</b>, Xiangchao Meng,
+              "Blind quality assessment for multiply distorted stereoscopic images towards IoT-based 3D capture
+              systems," <i><b>Journal of Visual Communication and Image Representation</b></i>, 71: 102868, 2020. <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S1047320320301188">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px">Jinbin Hu, Xuejin Wang, Feng Shao, <b>Qiuping Jiang</b>, "TSPR: Deep
+              network-based blind image quality assessment using two-side pseudo reference images," <i><b>Digital Signal
+                  Processing</b></i>, 106: 102849, 2020. <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S1051200420301949">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px">Yiming Xiong, Feng Shao, Xiangchao Meng, <b>Qiuping Jiang</b>, Weiwei Sun,
+              Randi Fu, Yo-Sung Ho, "A large-scale remote sensing database for subjective and objective quality
+              assessment of pansharpened images," <i><b>Journal of Visual Communication and Image
+                  Representation</b></i>, 73: 102947, 2020. <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S1047320320301760">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px">Guibiao Liao, Wei Gao, <b>Qiuping Jiang</b>, Ronggang Wang, Ge Li, "MMNet:
+              Multi-Stage and Multi-Scale Fusion Network for RGB-D Salient Object Detection," <i><b>in Proceedings of the 
+              28th ACM International Conference on Multimedia (ACM MM)</b></i>, Seattle, WA, USA, Oct. 2020. <a
+                href="https://dl.acm.org/doi/10.1145/3394171.3413523">[ACM Digital Library] </a> </li>
+          </ol>
+        </div>
+
+        <h4>2019</h4>
+        <div style="text-align:justify;text-justify:inter-ideograph">
+          <ol>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Wei Gao, Zhuo Chen, Gangyi Jiang, Yo-Sung
+              Ho, "Unified no-reference quality assessment of singly and multiply distorted stereoscopic images,"
+              <i><b>IEEE Transactions on Image Processing (TIP)</b></i>, 28(4): 1866-1881, Apr. 2019. <a
+                href="https://ieeexplore.ieee.org/document/8540445">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Weisi Lin, Gangyi Jiang, "BLIQUE-TMI: Blind
+              quality evaluator for tone-mapped images based on local and global feature analyses," <i><b>IEEE
+                  Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 29(2): 323-335, Feb. 2019.
+              <a href="https://ieeexplore.ieee.org/document/8214257">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Wei Gao, Hong Li, Yo-Sung Ho, "A risk-aware
+              pairwise rank learning approach for visual discomfort prediction of stereoscopic 3D," <i><b>IEEE Signal
+                  Processing Letters (SPL)</b></i>, 26(11): 1588-1592, Nov. 2019. <a
+                href="https://ieeexplore.ieee.org/document/8832170">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Zhenyu Peng, Sheng Yang, Feng Shao, "Authentically
+              distorted image quality assessment by learning from empirical score distributions," <i><b>IEEE Signal
+                  Processing Letters (SPL)</b></i>, 26(12): 1867-1871, Dec. 2019. <a
+                href="https://ieeexplore.ieee.org/document/8890868">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Yongqiang Bai, Mei Yu<sup>*</sup>, <b>Qiuping Jiang<sup>*</sup></b>, Gangyi
+              Jiang, Zhongjie Zhu, "Learning content-specific codebooks for blind quality assessment of screen content
+              images," <i><b>Signal Processing (SP)</b></i>, 161: 248-258, Aug. 2019. <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0165168419301008">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px">Wujie Zhou, Sijia Lv, <b>Qiuping Jiang</b>, Lu Yu, "Deep road scene
+              understanding," <i><b>IEEE Signal Processing Letters (SPL)</b></i>, 26(4): 587-591, Apr. 2019. <a
+                href="https://ieeexplore.ieee.org/document/8630577">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Wei Gao, Sam Kwong, <b>Qiuping Jiang</b>, Chi-Keung Fong, Peter H. W. Wong,
+              Wilson Y. F. Yuen, "Data-Driven rate control for rate distortion optimization in HEVC based on simplified
+              effective initial QP learning," <i><b>IEEE Transactions on Broadcasting (TBC)</b></i>, 65(1): 94-108, Mar.
+              2019. <a href="https://ieeexplore.ieee.org/document/8456843/">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Sheng Yang, <b>Qiuping Jiang</b>, Weisi Lin, Yongtao Wang, "SGDNet: An
+              end-to-end saliency-guided deep neural network for no-reference image quality assessment," 
+              <i><b>in Proceedings of the 27th ACM International Conference on Multimedia (ACM MM)</b></i>, Nice, France, Oct. 2019. <a
+                href="https://dl.acm.org/doi/10.1145/3343031.3350990">[ACM Digital Library] </a> </li>
+            <li style="margin-bottom: 15px">Chao Huang, Zongju Peng, Fen Chen, <b>Qiuping Jiang</b>, Xin Cui, Gangyi
+              Jiang, "Encoding complexity control for live video applications: An interpretable machine learning
+              approach," in Proc. of <i><b>the IEEE International Conference on Multimedia and Expo (ICME)</b></i>,
+              Shanghai, China, Jul. 2019. <a href="https://ieeexplore.ieee.org/document/8784831">[IEEE Xplore] </a>
+            </li>
+          </ol>
+        </div>
+
+        <h4>2018</h4>
+        <div style="text-align:justify;text-justify:inter-ideograph">
+          <ol>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Weisi Lin, Gangyi Jiang, "Learning sparse
+              representation for objective image retargeting quality assessment," <i><b>IEEE Transactions on Cybernetics
+                  (TCYB)</b></i>, 48(4): 1276-1289, Apr. 2018. <a
+                href="https://ieeexplore.ieee.org/document/7898810">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Weisi Lin, Ke Gu, Gangyi Jiang, Huifang
+              Sun,
+              "Optimizing multistage discriminative dictionaries for blind image quality assessment," <i><b>IEEE
+                  Transactions on Multimedia (TMM)</b></i>, 20(8): 2035-2048, Aug. 2018. <a
+                href="https://ieeexplore.ieee.org/document/8068275">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Weisi Lin, Gangyi Jiang, "Learning a
+              referenceless stereopair quality engine with deep non-negativity constrained sparse auto-encoder,"
+              <i><b>Pattern Recognition (PR)</b></i>, 76: 242-255, Apr. 2018. <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0031320317304582">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px">Guanghui Yue, Chunping Hou, <b>Qiuping Jiang<sup>*</sup></b>, Yang Yang,
+              "Blind stereoscopic 3D image quality assessment via analysis of naturalness, structure, and binocular
+              asymmetry," <i><b>Signal Processing (SP)</b></i>, 150: 204-214, Sep. 2018. <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0165168418301452">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px">Feng Shao, Ying Gao, <b>Qiuping Jiang</b>, Gangyi Jiang, Yo-Sung Ho,
+              "Multistage pooling for quality prediction of asymmetric multiply distorted stereoscopic images,"
+              <i><b>IEEE
+                  Transactions on Multimedia (TMM)</b></i>, 20(10): 2605-2619, Oct. 2018. <a
+                href="https://ieeexplore.ieee.org/document/8322312/">[IEEE Xplore] </a>
+            </li>
+            <li style="margin-bottom: 15px">Feng Shao, Zhuqing Zhang, <b>Qiuping Jiang</b>, Weisi Lin, Gangyi Jiang,
+              "Towards domain transfer for no-reference quality prediction of asymmetrically distorted stereoscopic
+              images," <i><b>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</b></i>, 28(3):
+              573-585, Mar. 2018. <a href="https://ieeexplore.ieee.org/document/7742366">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Fucui Li, Feng Shao, <b>Qiuping Jiang</b>, Randi Fu, Gangyi Jiang, Mei Yu,
+              "Local and global sparse representation for no-reference quality assessment of stereoscopic images,"
+              <i><b>Information Sciences (INS)</b></i>, 422: 110-121, Jan. 2018. <a
+                href="https://www.sciencedirect.com/science/article/pii/S0020025516312749">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px">Zhenqi Fu, Feng Shao, <b>Qiuping Jiang</b>, Randi Fu, Yo-Sung Ho, "Quality
+              Assessment of Retargeted Images Using Hand-Crafted and Deep-Learned Features," <i><b>IEEE Access</b></i>,
+              6:
+              12008-12018, 2018. <a href="https://ieeexplore.ieee.org/document/8299620">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Chao Huang, Zongju Peng, Fen Chen, <b>Qiuping Jiang</b>, Gangyi Jiang,
+              "Efficient CU and PU Decision Based on Neural Network and Gray Level Co-Occurrence Matrix for Intra
+              Prediction of Screen Content Coding," <i><b>IEEE Access</b></i>, 6: 46643-46655, 2018. <a
+                href="https://ieeexplore.ieee.org/document/8447509">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Feng Shao, Yan Yang, <b>Qiuping Jiang</b>, Gangyi Jiang, Yo-Sung Ho,
+              "Automated Quality Assessment of Fundus Images via Analysis of Illumination, Naturalness and Structure,"
+              <i><b>IEEE Access</b></i>, 2018. <a href="https://ieeexplore.ieee.org/document/8116608">[IEEE Xplore] </a>
+            </li>
+          </ol>
+        </div>
+
+        <h4>2017 and before</h4>
+        <div style="text-align:justify;text-justify:inter-ideograph">
+          <ol>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Gangyi Jiang, Mei Yu, Zongju Peng, "Visual
+              comfort assessment for stereoscopic images based on sparse coding with multi-scale dictionaries,"
+              <i><b>Neurocomputing (NC)</b></i>, 252: 77-86, Aug. 2017. <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0925231217306616">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Weisi Lin, Gangyi Jiang, "On predicting
+              visual comfort of stereoscopic images: A learning to rank based approach," <i><b>IEEE Signal Processing
+                  Letters (SPL)</b></i>, 23(2): 302-306, Feb. 2016. <a
+                href="https://ieeexplore.ieee.org/document/7378462">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Gangyi Jiang, Mei Yu, Zongju Peng,
+              "Supervised dictionary learning for blind image quality assessment using quality-constraint sparse
+              coding,"
+              <i><b>Journal of Visual Communication and Image Representation (JVCI)</b></i>, 33: 123-133, Nov. 2015. <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S1047320315001789">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Gangyi Jiang, Mei Yu, Zongju Peng,
+              Changhong
+              Yu, "A depth perception and visual comfort guided computational model for stereoscopic 3D visual
+              saliency,"
+              <i><b>Signal Processing: Image Communication (SPIC)</b></i>, 38: 57-69, Oct. 2015. <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0923596515000685">[ScienceDirect] </a>
+            </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Gangyi Jiang, Mei Yu, Zongju Peng,
+              "Leveraging visual attention and neural activity for stereoscopic 3D visual comfort assessment,"
+              <i><b>Multimedia Tools and Applications (MTAP)</b></i>, 76(7): 9405-9425, Apr. 2017. <a
+                href="https://link.springer.com/article/10.1007/s11042-016-3548-2">[Springer] </a>
+            </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Gangyi Jiang, Mei Yu, Zongju Peng,
+              "Three-dimensional visual comfort assessment via preference learning," <i><b>Journal of Electronic Imaging
+                  (JEI)</b></i>, 24(4): 043002, Jul. 2015. <a
+                href="https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-24/issue-4/043002/Three-dimensional-visual-comfort-assessment-via-preference-learning/10.1117/1.JEI.24.4.043002.short?SSO=1">[SPIE
+                Digital Library] </a> </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Gangyi Jiang, "MSFE: Blind image quality
+              assessment based on multi-stage feature encoding," in Proc. of <i><b>the IEEE International Conference on
+                  Image Processing (ICIP)</b></i>, Beijing, China, Sep. 2017. <a
+                href="https://ieeexplore.ieee.org/document/8296865">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px"><b>Qiuping Jiang</b>, Feng Shao, Gangyi Jiang, Mei Yu, Zongju Peng,
+              "Supervised dictionary learning for blind image quality assessment," in Proc. of <i><b>the IEEE
+                  International Conference on Visual Communications and Image Processing (VCIP)</b></i>, Singapore, Dec.
+              2015. <a href="https://ieeexplore.ieee.org/document/7457897/">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Feng Shao, Wenchong Lin, Weisi Lin, <b>Qiuping Jiang</b>, Gangyi Jiang,
+              "QoE-guided warping for stereoscopic image retargeting," <i><b>IEEE Transactions on Image Processing
+                  (TIP)</b></i>, 26(10): 4790-4805, Oct. 2017. <a
+                href="https://ieeexplore.ieee.org/document/7962290">[IEEE Xplore] </a> </li>
+            <li style="margin-bottom: 15px">Feng Shao, <b>Qiuping Jiang</b>, Randi Fu, Mei Yu, Gangyi Jiang, "Optimizing
+              visual comfort for stereoscopic 3D display based on color-plus-depth signals," <i><b>Optics Express
+                  (OE)</b></i>, 24(11): 11640-11653, May 2016. <a
+                href="https://www.osapublishing.org/oe/abstract.cfm?uri=oe-24-11-11640">[OSA Publishing] </a> </li>
+            <li style="margin-bottom: 15px">Feng Shao, Libo Shen, <b>Qiuping Jiang</b>, Randi Fu, Gangyi Jiang,
+              "StereoEditor: Controllable stereoscopic display by content retargeting," <i><b>Optics Express
+                  (OE)</b></i>,
+              25(26): 33202-33215, Dec. 2017. <a
+                href="https://www.osapublishing.org/oe/abstract.cfm?uri=oe-25-26-33202">[OSA Publishing] </a> </li>
+          </ol>
+        </div>
+
+        <div id="Professional"></div>
+        <h3>Activities and Services</h3>
+        <ul>
+          <li><strong>Membership</strong>:
+            <ul>
+              <li>IEEE（美国电气电子工程师协会）、CCF（中国计算机学会）、CSIG（中国图象图形学会）</li>
+              <li>CSIG Big Visual Data Technical Committee Member （CSIG视觉大数据专委会委员）</li>
+              <li>CSIG Multimedia Technical Committee Member （CSIG多媒体专委会委员）</li>
+            </ul>
+          </li>
+          <li><strong>Associate Editor</strong>:
+            <ul>
+              <li>IET Image Processing, 2022~</li>
+              <li>SPIE Journal of Electronic Imaging, 2022~</li>
+              <li>APSIPA Transactions on Signal and Information Processing, 2022~</li>
+            </ul>
+          </li>
+          <li><strong>Special Session Organizer</strong>:
+            <ul>
+              <li>Special Session on Multi-source Data Processing and Analysis: Models, Methods and Applications,
+                Asia-Pacific Signal and Information Processing Association (APSIPA) ASC 2019</li>
+            </ul>
+          </li>
+          <li><strong>Technical Program Committee Member</strong>:
+            <ul>
+              <li>International Joint Conference on Artificial Intelligence (IJCAI) 2021</li>
+              <li>ACM Multimedia (ACM MM) 2021</li>
+              <li>IEEE International Conference on Multimedia &amp; Expo (ICME) 2020、2021(AC)、2022(AC)</li>
+              <li>IEEE International Conference on Image Processing (ICIP) 2018、2019</li>
+              <li>IEEE Visual Communiaction and Image Processing (VCIP) 2017-2020</li>
+              <li>Asia-Pacific Signal and Information Processing Association (APSIPA) ASC 2020</li>
+              <li>National Conference on Image and Graphics (NCIG) 2020</li>
+            </ul>
+          </li>
+          <li><strong>Reviewer</strong>:
+            <ul>
+              <li>IEEE Transactions on Image Processing</li>
+              <li>IEEE Transactions on Cybernetics</li>
+              <li>IEEE Transactions on Neural Networks and Learning Systems</li>
+              <li>IEEE Transactions on Circuits Systems for Video Technology</li>
+              <li>IEEE Transactions on Multimeida</li>
+              <li>IEEE Transactions on Industrial Electronics</li>
+              <li>IEEE Transactions on Industrial Informatics</li>
+              <li>IEEE Transactions on Medical Imaging</li>
+              <li>IEEE Transactions on Broadcasting</li>
+              <li>IEEE Transactions on Emerging Topics in Computational Intelligence</li>
+              <li>IEEE Internet of Things Journal</li>
+              <li>IEEE Multimeida Magazine</li>
+              <li>IEEE Signal Processing Letters</li>
+              <li>ACM Computing Survey</li>
+              <li>ACM Transactions on Multimedia Computing, Communications, and Applications</li>
+              <li>Elsevier Neurocomputing</li>
+              <li>Elsevier Signal Processing</li>
+              <li>Elsevier Signal Processing: Image Communication</li>
+              <li>Elsevier Journal of Visual Communication and Image Representation</li>
+              <li>IET Image Processing</li>
+              <li>IET Signal Processing</li>
+              <li>China Communications</li>
+              <li>电子学报</li>
+              <li>计算机学报</li>
+              <li>中国图象图形学报</li>
+            </ul>
+          </li>
+        </ul>
+
+
+        <footer class="site-footer">
+
+          <span class="site-footer-owner"><a href="https://github.com/jiangqiuping/Homepage">Homepage</a> is maintained
+            by
+            <a href="https://github.com/jiangqiuping">jiangqiuping</a>.</span>
+
+          <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub
+              Pages</a>.</span>
+        </footer>
+      </div>
+    </main>
+
+
+  </body>
+
+  <script type="text/javascript" src="./asset/jquery.js"></script>
+  <script type="text/javascript">
+    //用于判断导航栏的状态
+    var toggle = true;
+
+    //导航栏按钮
+    $('.btnImg').click(function() {
+      if (toggle) {
+        $('.btnImg').css("border", "1px solid #b0ccf3");
+        toggle = false
+      } else {
+        $('.btnImg').css("border", "1px solid transparent");
+        toggle = true;
+      }
+      $(".show").slideToggle(300);
+    })
+
+    //窗口大小发生改变
+    $(window).resize(function() {
+      //获取窗口宽度
+      var windSize = $(window).width();
+
+      if (windSize > 576) {
+        $(".show").slideDown(0);
+      } else {
+        $(".show").slideUp(0);
+      }
+    });
+
+    // 锚点控制函数
+    function finishJump() {
+      // 调整30px 以防内容被挡住
+      var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+      document.documentElement.scrollTop = scrollTop - 50
+      // 关闭导航栏
+      //获取窗口宽度
+      var windSize = $(window).width();
+      console.log("windSize:", windSize)
+      if (windSize < 576) {
+        $('.btnImg').css("border", "1px solid #b0ccf3");
+        toggle = false
+        $(".show").slideToggle(300);
+      }
+    }
+    // <li><a id="BiographyNav">Biography</a></li>
+    // <li><a id="StudentNav">Student Recruitment</a></li>
+    // <li><a id="RecentNav">Recent Posts</a></li>
+    // <li><a id="PublicationsNav">Publications</a></li>
+    // <li><a id="ProfessionalNav">Professional Activities and Services</a></li>
+    // 回到顶部
+    $("#logo").click(function() {
+      document.documentElement.scrollTop = 0
+    });
+    // 具体锚点控制
+    $("#BiographyNav").click(function() {
+      $("#Biography")[0].scrollIntoView()
+      // 跳转后调整
+      finishJump()
+    });
+    $("#StudentNav").click(function() {
+      $("#Student")[0].scrollIntoView()
+      // 跳转后调整
+      finishJump()
+    });
+    $("#RecentNav").click(function() {
+      $("#Recent")[0].scrollIntoView()
+      // 跳转后调整
+      finishJump()
+    });
+    $("#PublicationsNav").click(function() {
+      $("#Publications")[0].scrollIntoView()
+      // 跳转后调整
+      finishJump()
+    });
+    $("#ProfessionalNav").click(function() {
+      $("#Professional")[0].scrollIntoView()
+      // 跳转后调整
+      finishJump()
+    });
+  </script>
+
+  <style type="text/css" media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    /* header */
+    .page-header {
+      margin-top: 58px;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .c-nav .show {
+      display: inline-block;
+    }
+
+    .c-nav .hiden {
+      display: none;
+    }
+
+    /* 背景层 */
+    .main-container {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      position: relative;
+      top: 58px;
+      padding: 30px;
+    }
+
+    /* 简介 */
+    .content-container {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .content-container-left {
+      display: inline-block;
+      width: 63%;
+      min-width: 250px;
+    }
+
+    .content-container-right {
+      display: inline-block;
+      width: 35%;
+      min-width: 250px;
+      margin: 20px 0;
+    }
+
+    /* 导航栏 */
+    .c-nav {
+      width: 100%;
+      background-color: white;
+      position: fixed;
+      top: 0rem;
+      z-index: 100;
+    }
+
+    .c-nav .navFlex {
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      align-items: center;
+      -webkit-align-content: center;
+      color: white;
+    }
+
+    .c-nav ul {
+      list-style: none;
+      margin-bottom: 0px;
+      padding-left: 0px;
+    }
+
+    .c-nav ul li {
+      padding: 15px 0px 15px 0px;
+      margin-left: 30px;
+      display: inline-block;
+    }
+
+    .c-nav ul li a {
+      color: black;
+      padding-bottom: 2px;
+      text-decoration: none;
+      border-bottom: 3px solid transparent;
+    }
+
+    .c-nav ul li a:hover {
+      border-bottom: 3px solid #e4c17e;
+    }
+
+    .c-nav .logo {
+      margin-left: 20px;
+      height: 40px;
+    }
+
+    .c-nav .btnImg {
+      height: 20px;
+      width: 25px;
+      padding: 3px 8px 3px 8px;
+      box-sizing: content-box;
+      border: 1px solid transparent;
+    }
+
+    @media screen and (max-width:1200px) {
+      .c-nav ul li {
+        margin-left: 20px;
+      }
+    }
+
+    @media screen and (max-width:992px) {
+      .c-nav ul li {
+        margin-left: 10px;
+      }
+    }
+
+    @media screen and (max-width:768px) {
+
+      .c-nav ul li:nth-child(4),
+      .c-nav ul li:nth-child(5) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width:576px) {
+      .c-nav {
+        /* background-color: rgba(176, 204, 243, 0.8); */
+        background-color: white;
+        padding: 10px 0px 10px 0px;
+        opacity: 0.9;
+      }
+
+      .c-nav .navFlex {
+        flex-wrap: wrap;
+        font-size: 20px;
+        justify-content: space-between;
+      }
+
+      .c-nav .logo {
+        height: 30px;
+      }
+
+      .c-nav ul li {
+        padding-top: 10px;
+        margin-left: 0px;
+        display: block;
+      }
+
+      .c-nav ul li a {
+        border-bottom: 3px solid transparent;
+      }
+
+      .c-nav ul a:hover {
+        border-bottom: 3px solid #e4c17e;
+      }
+
+      .c-nav ul li:nth-child(4),
+      .c-nav ul li:nth-child(5) {
+        display: block;
+      }
+
+      .c-nav .hiden {
+        display: block;
+      }
+
+      .c-nav .show {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        display: none;
+      }
+    }
+
+    ol li {
+      list-style-type: decimal;
+      list-style-position: inside;
+    }
+
+    ul li {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  </style>
+
+</html>
